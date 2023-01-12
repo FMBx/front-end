@@ -1,0 +1,170 @@
+/* 
+
+	Arquivo CSS geral com estilos dos elementos de todas páginas 
+
+*/
+
+* {
+  box-sizing: border-box;
+}
+
+html {
+	margin: 0;
+	padding: 0;
+	font-size: 62.5%; /* equivalente a 10px */
+}
+p {
+font-size: 2rem;
+}
+
+body {
+	background-color: white;
+}
+
+h1 {
+	font-size: 5rem;
+}
+
+h2 {
+	font-size: 3rem;
+}
+
+h3{
+  font-size: 2rem;
+}
+
+form {
+	background: #eee;
+	padding: 10px;
+}
+
+form div {
+	background: #fff;
+	border-bottom: 1px solid #33f;
+	margin: 1rem;
+	padding: 2rem;
+}
+
+label {
+	margin-bottom: 1rem;
+	font-size: 1.4rem; 
+	font-family: sans-serif;
+	font-weight: bold;
+	color: #66F;
+}
+
+input {
+	padding: 1rem;
+}
+
+[type="text"], [type="email"], textarea, label {
+	display: block;
+	width: 100%;
+}
+
+header {
+  background-color:#eb5f07;
+  padding: 30px;
+  text-align: center;
+  font-size: 35px;
+  color: white; /*#eb5f07 laranja do rfid*/
+}
+
+nav {
+  float: left;
+  width: 20%;
+  padding: 50px;
+  background-color:rgb(1, 1, 51);
+  color: #fff;
+}
+
+nav ul {
+  list-style-type: none;
+  padding: 0;
+  font-size: 2rem;
+}
+
+nav ul li a{
+  background-color: rgb(1, 1, 51);
+  color:#fff;
+  padding:0;
+  display: block;
+  text-decoration: none;
+  transition: all.3s;
+}
+nav ul li a:hover{
+  background-color: #a9a9a9;
+
+}
+article {
+  float: left;
+  padding: 20px;
+  width: 70%
+}
+article .card1{
+  height: 500px;
+}
+article .card2{
+  height: 500px;
+}
+
+article .card1 .caixa1 {
+  float:left ;
+  width: 400px;
+
+}
+article .card1 .caixa2 {
+  float:right;
+  width: 400px;
+
+}
+article .card2 .caixa1 {
+  float:left;
+  width: 400px;
+}
+  article .card2 .caixa2 {
+    float:right;
+    width: 400px;
+
+  }
+section::after {
+  content: "";
+  display: table;
+  clear: both;
+}
+
+footer {
+  background-color: #eee;
+  padding: 10px;
+  text-align: center;
+  color: black;
+}
+.filtro:hover {
+  filter: brightness(60%);
+}
+div{
+  float: center;
+  padding: auto;
+
+}
+
+@media (max-width: 425px) {
+  article,nav, .caixa1, .caixa2, .card1, .card2, .filtro:hover {
+    width: 100%;
+    height: auto;
+  }
+  .youtube{
+    width: auto;
+  }
+}
+@media(max-whidth: 600px){
+  
+  article, nav, .caixa1, .caixa2, .card1, .card2, .filtro:hover {
+    width: 100%;
+    height: auto;
+  }
+  . .youtube{
+    width: auto;
+  }
+    
+  }
